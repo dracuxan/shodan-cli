@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -10,7 +11,9 @@ import (
 )
 
 func main() {
-	if err := godotenv.Load(".env"); err != nil {
+	user := os.Getenv("USER")
+	path := fmt.Sprintf("/home/%s/.shodan-cli.conf", user)
+	if err := godotenv.Load(path); err != nil {
 		log.Fatalf("Unable to load env file: %v", err)
 	}
 

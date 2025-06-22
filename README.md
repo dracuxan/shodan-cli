@@ -11,7 +11,7 @@ go install github.com/dracuxan/shodan-cli@latest
 ```
 
 > [!NOTE]
-> You need a .env file with your Shodan API key to run the tool.
+> You need a `.shodan-cli.conf` file with your Shodan API key in your home directory to run the tool.
 
 ## Setup
 
@@ -31,7 +31,7 @@ make deps
 3. Set your Shodan API key in the `.env` file
 
 ```sh
-echo "SHODAN_API_KEY=your_api_key_here" > .env
+echo "SHODAN_API_KEY=your_api_key_here" > /home/$USER/.shodan-cli.conf
 ```
 
 4. Run the tool
