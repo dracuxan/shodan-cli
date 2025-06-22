@@ -1,4 +1,6 @@
-# A HTTP client that interacts with Shodan.io [Basically a shodan-cli clone written in Go]
+# shodan-cli
+
+A HTTP client that interacts with Shodan.io [Basically a shodan-cli clone written in Go]
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/dracuxan/shodan-cli)](https://goreportcard.com/report/github.com/dracuxan/shodan-cli)
 [![GoDoc](https://godoc.org/github.com/dracuxan/shodan-cli?status.svg)](https://godoc.org/github.com/dracuxan/shodan-cli)
