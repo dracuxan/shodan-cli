@@ -10,6 +10,9 @@ A HTTP client that interacts with Shodan.io [Basically a shodan-cli clone writte
 go install github.com/dracuxan/shodan-cli@latest
 ```
 
+> [!NOTE]
+> You need a .env file with your Shodan API key to run the tool.
+
 ## Setup
 
 1. Clone the repository
@@ -31,13 +34,7 @@ make deps
 echo "SHODAN_API_KEY=your_api_key_here" > .env
 ```
 
-4. Source the `.env` file to load the environment variables
-
-```sh
-source .env
-```
-
-5. Run the tool
+4. Run the tool
 
 ```sh
 make run
