@@ -1,4 +1,4 @@
-module github.com/Nisarg2061/shodan-cli
+module github.com/dracuxan/shodan-cli
 
 go 1.24.1
 
