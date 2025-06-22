@@ -1,5 +1,7 @@
 .PHONY: all run build clean
 
+all: deps run
+
 deps:
 	@go mod tidy
 

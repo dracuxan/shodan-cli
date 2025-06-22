@@ -13,7 +13,7 @@ go install github.com/dracuxan/shodan-cli@latest
 > [!NOTE]
 > You need a `.shodan-cli.conf` file with your Shodan API key in your home directory to run the tool.
 
-## Setup
+## 3 Easy Steps to Get Started
 
 1. Clone the repository
 
@@ -22,20 +22,14 @@ git clone https://github.com/dracuxan/shodan-cli.git
 
 ```
 
-2. Install the required dependencies
+2. Set your Shodan API key in the `.shodan-cli.conf` file
 
 ```sh
-make deps
+echo "SHODAN_API_KEY=[api_key]" > /home/$USER/.shodan-cli.conf
 ```
 
-3. Set your Shodan API key in the `.env` file
+3. Run the tool
 
 ```sh
-echo "SHODAN_API_KEY=your_api_key_here" > /home/$USER/.shodan-cli.conf
-```
-
-4. Run the tool
-
-```sh
-make run
+make
 ```
